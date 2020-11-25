@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SlideShow">
+
+    <com.
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/slider"
+        app:auto_cycle="true"
+        app:delay="1"
+        app:period="1000"
+
+        app:placeholder="@color/text"
+        app:error_image="@color/text">
+
+        <RelativeLayout
+            android:gravity="right|center_horizontal|bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+
+                android:id="@+id/btnNext"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:elevation="5dp"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_next"></ImageButton>
+        </RelativeLayout>
+    </com.>
+</LinearLayout>

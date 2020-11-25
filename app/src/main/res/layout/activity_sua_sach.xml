@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Book.EditBookActivity">
+
+    <TextView
+        android:layout_gravity="left"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:textColor="@color/textXanh"
+        android:text="Mã sách"></TextView>
+
+    <TextView
+        android:inputType="text"
+        android:padding="7dp"
+        android:textSize="9pt"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/border"
+        android:id="@+id/edMaSach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:textColorHint="@color/fullwhite" />
+
+    <TextView
+        android:layout_gravity="left"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:textColor="@color/textXanh"
+        android:text="Thể loại"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spnTheLoai"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:elevation="5dp"
+            android:textColorHint="@color/fullwhite"
+            android:layout_weight="5"
+            android:background="@drawable/border"
+            android:inputType="text"
+            android:padding="7dp"
+            android:paddingTop="15dp"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:layout_marginTop="7dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:elevation="5dp"
+            android:id="@+id/addCategory"
+            android:textColorHint="@color/fullwhite"
+            android:src="@drawable/ic_plus" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_gravity="left"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:textColor="@color/textXanh"
+        android:text="Tên sách"></TextView>
+
+    <EditText
+        android:inputType="text"
+        android:padding="7dp"
+        android:textSize="9pt"
+        android:layout_marginTop="7dp"
+        android:elevation="5dp"
+        android:textColorHint="@color/fullwhite"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/border"
+        android:id="@+id/edTenSach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_gravity="left"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:textColor="@color/textXanh"
+        android:text="Tác giả"></TextView>
+
+    <EditText
+        android:inputType="text"
+        android:padding="7dp"
+        android:textSize="9pt"
+        android:elevation="5dp"
+        android:textColorHint="@color/fullwhite"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/border"
+        android:id="@+id/edTacGia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="7dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:textColor="@color/textXanh"
+        android:text="Nhà xuất bản"></TextView>
+
+    <EditText
+        android:inputType="text"
+        android:padding="7dp"
+        android:textSize="9pt"
+        android:layout_marginTop="7dp"
+        android:elevation="5dp"
+        android:textColorHint="@color/fullwhite"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/border"
+        android:id="@+id/edNXB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="7dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:textColor="@color/textXanh"
+        android:text="Giá"></TextView>
+
+    <EditText
+        android:inputType="number"
+        android:padding="7dp"
+        android:textSize="9pt"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/border"
+        android:id="@+id/edGiaBia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:textColorHint="@color/fullwhite" />
+
+    <TextView
+        android:layout_marginTop="7dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:textColor="@color/textXanh"
+        android:text="Số lượng"></TextView>
+
+    <EditText
+        android:inputType="number"
+        android:padding="7dp"
+        android:textSize="9pt"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/border"
+        android:id="@+id/edSoLuong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:textColorHint="@color/fullwhite" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:background="@drawable/btn"
+            android:textColor="@color/white"
+            android:elevation="5dp"
+            android:textColorHint="@color/fullwhite"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:id="@+id/btnAddBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="editBook"
+            android:text="SỬA" />
+
+        <Button
+            android:background="@drawable/btn"
+            android:textColor="@color/white"
+            android:elevation="5dp"
+            android:textColorHint="@color/fullwhite"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:id="@+id/btnCancelBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Huỷ" />
+    </LinearLayout>
+
+    <Button
+        android:background="@drawable/btn"
+        android:textColor="@color/white"
+        android:elevation="5dp"
+        android:textColorHint="@color/fullwhite"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showBook"
+        android:text="show" />
+</LinearLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Account.SignInActivity">
+
+    <TextView
+        android:layout_gravity="left"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:textColor="@color/textXanh"
+        android:text="Nhập họ và tên"></TextView>
+
+    <EditText
+        android:inputType="text"
+        android:padding="7dp"
+        android:textSize="25dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/border"
+        android:textColorHint="@color/fullwhite"
+        android:id="@+id/edFullName"
+        android:layout_width="match_parent"
+        android:elevation="5dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_gravity="left"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:textColor="@color/textXanh"
+        android:text="Nhập số điện thoại"></TextView>
+
+    <EditText
+        android:inputType="phone"
+        android:padding="7dp"
+        android:textSize="9pt"
+        android:textColorHint="@color/fullwhite"
+        android:layout_margin="15dp"
+        android:background="@drawable/border"
+        android:id="@+id/edPhone"
+        android:textColor="@color/textXanh"
+        android:elevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_gravity="left"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:textColor="@color/textXanh"
+        android:text="Nhập email"></TextView>
+
+    <EditText
+        android:inputType="text"
+        android:padding="7dp"
+        android:textSize="9pt"
+        android:layout_margin="15dp"
+        android:textColorHint="@color/fullwhite"
+        android:background="@drawable/border"
+        android:id="@+id/edUserName"
+        android:elevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_gravity="left"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:textColor="@color/textXanh"
+        android:text="Nhập mật khẩu"></TextView>
+
+    <EditText
+        android:padding="7dp"
+        android:textSize="9pt"
+        android:layout_margin="15dp"
+        android:background="@drawable/border"
+        android:textColorHint="@color/fullwhite"
+        android:elevation="5dp"
+        android:id="@+id/edPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:layout_gravity="left"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="8pt"
+        android:textColor="@color/textXanh"
+        android:text="Nhập lại mật khẩu"></TextView>
+
+    <EditText
+        android:padding="7dp"
+        android:textSize="9pt"
+        android:layout_margin="15dp"
+        android:background="@drawable/border"
+        android:textColorHint="@color/fullwhite"
+        android:id="@+id/edRePassword"
+        android:elevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:background="@drawable/btn"
+            android:elevation="5dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_margin="15dp"
+            android:id="@+id/btnAddUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="addUser"
+            android:text="Đăng ký" />
+
+        <Button
+            android:background="@drawable/btn"
+            android:elevation="5dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_margin="15dp"
+            android:id="@+id/btnCancelUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Huỷ" />
+    </LinearLayout>
+</LinearLayout>

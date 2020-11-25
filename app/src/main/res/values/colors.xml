@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="xanh">#BED3F4</color>
+    <color name="textXanh">#005A83</color>
+    <color name="cam">#FF900D</color>
+    <color name="gray">#F3F3F3</color>
+    <color name="gray2">#707070</color>
+    <color name="white">#ffffff</color>
+    <color name="bg">#2DD1CBCB</color>
+    <color name="textAdmin">#FF3D00</color>
+    <color name="fullwhite">#7A7A7A</color>
+    <color name="text">#006D9E</color>
+    <color name="transparent">#00000000</color>
+
+
+</resources>

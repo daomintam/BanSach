@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".Book.ListBookActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <EditText
+            android:id="@+id/edSearchBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@drawable/border"
+            android:hint="Tìm kiếm"
+            android:padding="9dp"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:src="@drawable/ic_search"
+            android:layout_marginLeft="4dp"
+            android:textSize="20sp"
+            android:layout_width="15dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/lvBook"
+        android:layout_width="match_parent"
+        android:layout_height="609dp"
+        android:divider="@null"></com.baoyz.swipemenulistview.SwipeMenuListView>
+
+    <RelativeLayout
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="right"
+        android:gravity="right">
+
+        <Button
+            android:id="@+id/btnThemSach"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/ic_plus"></Button>
+    </RelativeLayout>
+</LinearLayout>
