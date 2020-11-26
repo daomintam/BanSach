@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <item
+        android:bottom="3sp"
+        android:left="8sp"
+        android:right="8sp"
+        android:top="3sp">
+
+        <shape>
+
+            <corners android:radius="75sp" />
+
+            <padding android:bottom="8sp"
+                android:top="8sp" />
+
+            <solid android:color="@color/white" />
+
+        </shape>
+
+    </item>
+
+</layer-list>

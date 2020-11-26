@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Account.SignInActivity">
+
+    <TextView
+        android:layout_gravity="left"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="9pt"
+        android:textColor="@color/textXanh"
+        android:text="Nhập họ và tên"></TextView>
+
+    <EditText
+        android:inputType="text"
+        android:padding="7dp"
+        android:textSize="8pt"
+        android:typeface="monospace"
+        android:layout_margin="15dp"
+        android:hint="Nguyễn Văn A"
+        android:background="@drawable/border"
+        android:textColorHint="@color/fullwhite"
+        android:id="@+id/edFullName"
+        android:layout_width="match_parent"
+        android:elevation="5dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_gravity="left"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="9pt"
+        android:textColor="@color/textXanh"
+        android:text="Nhập số điện thoại"></TextView>
+
+    <EditText
+        android:inputType="phone"
+        android:padding="7dp"
+        android:textSize="8pt"
+        android:hint="0909090909"
+        android:typeface="monospace"
+        android:textColorHint="@color/fullwhite"
+        android:layout_margin="15dp"
+        android:background="@drawable/border"
+        android:id="@+id/edPhone"
+        android:textColor="@color/textXanh"
+        android:elevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_gravity="left"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="9pt"
+        android:textColor="@color/textXanh"
+        android:text="Nhập email"></TextView>
+
+    <EditText
+        android:inputType="text"
+        android:padding="7dp"
+        android:textSize="8pt"
+        android:typeface="monospace"
+        android:layout_margin="15dp"
+        android:textColorHint="@color/fullwhite"
+        android:background="@drawable/border"
+        android:id="@+id/edUserName"
+        android:elevation="5dp"
+        android:hint="example@gmail.com"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_gravity="left"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="9pt"
+        android:textColor="@color/textXanh"
+        android:text="Nhập mật khẩu"></TextView>
+
+    <EditText
+        android:padding="7dp"
+        android:textSize="8pt"
+        android:layout_margin="15dp"
+        android:background="@drawable/border"
+        android:textColorHint="@color/fullwhite"
+        android:elevation="5dp"
+        android:typeface="monospace"
+        android:hint="******"
+        android:id="@+id/edPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:layout_gravity="left"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="9pt"
+        android:textColor="@color/textXanh"
+        android:text="Nhập lại mật khẩu"></TextView>
+
+    <EditText
+        android:padding="7dp"
+        android:textSize="8pt"
+        android:layout_margin="15dp"
+        android:background="@drawable/border"
+        android:textColorHint="@color/fullwhite"
+        android:id="@+id/edRePassword"
+        android:hint="******"
+        android:elevation="5dp"
+        android:typeface="monospace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.spark.submitbutton.SubmitButton
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Đăng ký"
+            android:typeface="monospace"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/btnSignIn"
+            android:textColor="@color/textXanh"
+            app:sub_btn_background="@color/white"
+            app:sub_btn_duration="5000"
+            android:textAllCaps="true"
+            android:textSize="6pt"
+            android:onClick="addUser"
+            app:sub_btn_tick_color="@color/white"
+            app:sub_btn_line_color="@color/text"
+            app:sub_btn_ripple_color="@color/text" />
+
+        <Button
+            android:id="@+id/btnCancelUser"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:layout_marginTop="150dp"
+            android:typeface="monospace"
+            android:drawableLeft="@drawable/ic_exit"
+            android:background="@drawable/btnshape"
+            android:drawableTintMode="src_atop"
+            android:elevation="5dp"
+            android:text="Trở về"
+            android:textColor="@color/white"
+            android:textSize="8pt"></Button>
+    </LinearLayout>
+</LinearLayout>

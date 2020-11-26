@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".User.EditUserActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:ignoreGravity="@color/white">
+
+        <ImageView
+            android:id="@+id/avatarUserEdit"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:background="@drawable/tron"
+            android:src="@drawable/pin" />
+
+        <ImageButton
+            android:background="#00000000"
+            android:elevation="5dp"
+            android:layout_marginLeft="90dp"
+            android:src="@drawable/ic_came"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="80dp"></ImageButton>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="Họ và tên"
+        android:textStyle="bold"
+        android:textColor="@color/textXanh"
+        android:textSize="8pt" />
+
+    <EditText
+        android:inputType="text"
+        android:id="@+id/edFullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/border"
+        android:paddingLeft="25dp"
+        android:padding="10dp"
+        android:textSize="8pt" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="7dp"
+        android:text="Số điện thoại"
+        android:textStyle="bold"
+        android:textColor="@color/textXanh"
+        android:textSize="8pt" />
+
+    <EditText
+        android:id="@+id/edPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/border"
+        android:inputType="number"
+        android:padding="10dp"
+        android:paddingLeft="25dp"
+        android:textSize="8pt" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="7dp"
+        android:text="Email"
+        android:textStyle="bold"
+        android:textColor="@color/textXanh"
+        android:textSize="8pt" />
+
+    <EditText
+        android:id="@+id/edEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/border"
+        android:inputType="number"
+        android:padding="10dp"
+        android:paddingLeft="25dp"
+        android:textSize="8pt" />
+
+    <LinearLayout
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn"
+            android:onClick="updateUser"
+            android:text="Sửa"
+            android:textSize="8pt"
+            android:elevation="5dp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn"
+            android:onClick="Huy"
+            android:text="Quay lại"
+            android:textSize="8pt"
+            android:elevation="5dp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
