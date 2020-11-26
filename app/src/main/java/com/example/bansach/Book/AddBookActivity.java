@@ -44,6 +44,7 @@ public class AddBookActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_them_sach);
+        getSupportActionBar().hide();
         setTitle("THÊM SÁCH");
         spnTheLoai = (Spinner) findViewById(R.id.spnTheLoai);
 

@@ -37,6 +37,7 @@ public class ListCategoryActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_category);
+        getSupportActionBar().hide();
         setTitle("THỂ LOẠI");
         setContentView(R.layout.activity_list_category);
         lvTheLoai = findViewById(R.id.lvTheLoai);

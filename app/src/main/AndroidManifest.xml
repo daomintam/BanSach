@@ -14,7 +14,7 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SlideShow"></activity>
+        <activity android:name=".IntroActivity"></activity>
         <activity android:name=".User.MyUserActivity" />
         <activity android:name=".Book.EditBookActivity" />
         <activity android:name=".Category.EditCategoryActivity" />

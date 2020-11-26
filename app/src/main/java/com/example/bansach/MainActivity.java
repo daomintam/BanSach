@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        getSupportActionBar().hide();
 //        setTitle("QUẢN LÝ SÁCH");
         Intent i = getIntent();
         tenTk = i.getStringExtra("user");

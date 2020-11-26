@@ -24,6 +24,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.spark.submitbutton.SubmitButton;
 
 import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
@@ -32,6 +33,7 @@ import java.util.Iterator;
 public class SignInActivity extends AppCompatActivity {
     Button btnThemNguoiDung, btnHuy;
     //    NguoiDungDAO nguoiDungDAO;
+    SubmitButton btnSignin;
     EditText edUser, edPass, edRePass, edPhone, edFullName;
     ImageView picture;
     Bitmap selectBitmap;
@@ -44,8 +46,9 @@ public class SignInActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
+        getSupportActionBar().hide();
         setTitle("ĐĂNG KÝ");
-        btnThemNguoiDung = (Button) findViewById(R.id.btnAddUser);
+        btnSignin = (SubmitButton) findViewById(R.id.btnSignIn);
 
         edUser = (EditText) findViewById(R.id.edUserName);
         edPass = (EditText) findViewById(R.id.edPassword);

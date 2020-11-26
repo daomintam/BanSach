@@ -91,7 +91,7 @@
                     android:layout_width="60dp"
                     android:elevation="5dp"
                     android:layout_height="60dp"
-                    android:src="@drawable/user" />
+                    android:src="@drawable/pin" />
 
                 <TextView
                     android:id="@+id/textButton"

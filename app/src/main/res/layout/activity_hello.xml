@@ -4,8 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_centerInParent="true"
-    android:layout_gravity="center"
-    android:ignoreGravity="@id/logo">
+    android:layout_gravity="center">
 
     <LinearLayout
         android:layout_centerInParent="true"
@@ -14,14 +13,14 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/book"
+            android:id="@+id/iconBookStore"
             android:layout_width="match_parent"
             android:layout_height="142dp"
             android:src="@drawable/icon" />
 
         <TextView
             android:textAlignment="center"
-            android:id="@+id/logo"
+            android:id="@+id/textBookStore"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/book"

@@ -1,3 +1,2 @@
-include ':mtlibrary'
 include ':app'
 rootProject.name = "BanSach"

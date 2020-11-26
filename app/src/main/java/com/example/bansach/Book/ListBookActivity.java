@@ -42,6 +42,7 @@ public class ListBookActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setTitle("QUẢN LÝ SÁCH");
         setContentView(R.layout.activity_list_book);
+        getSupportActionBar().hide();
         View b = findViewById(R.id.btnThemSach);
         if (MainActivity.checkAdmin == true) {
             b.setVisibility(View.VISIBLE);

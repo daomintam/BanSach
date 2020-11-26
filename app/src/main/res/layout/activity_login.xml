@@ -10,10 +10,11 @@
     tools:context=".Account.LogInActivity">
 
     <ImageView
+
         android:layout_width="200dp"
         android:layout_height="142dp"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="50dp"
         android:layout_marginBottom="10dp"
         android:src="@drawable/icon" />
 
@@ -42,7 +43,7 @@
         android:textSize="9pt"></TextView>
 
     <EditText
-
+        android:typeface="monospace"
         android:id="@+id/edUserName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -85,6 +86,7 @@
             android:background="@drawable/border"
             android:textColorHint="@color/fullwhite"
             android:elevation="5dp"
+            android:typeface="monospace"
             android:textColor="@color/text"
             android:drawableStart="@drawable/password"
             android:drawablePadding="7dp"
@@ -95,50 +97,68 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <CheckBox
-        android:id="@+id/check"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:elevation="5dp"
-        android:text="Lưu mật khẩu"
-        android:textColor="@color/textXanh"
-        android:textSize="20dp" />
-
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
         android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/btnLogin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:layout_weight="1"
-            android:background="@drawable/btn"
-            android:elevation="5dp"
-            android:textColor="@color/white"
-            android:onClick="checkLogin"
-            android:text="Đăng nhập"
-            android:textSize="8pt"
-            android:textStyle="bold" />
+        <ToggleButton
+            android:id="@+id/check"
+            android:layout_width="40dp"
+            android:layout_height="22dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/toggle"
+            android:checked="false" />
 
-        <Button
-            android:id="@+id/btnCancel"
+        <TextView
+            android:textColor="@color/textXanh"
             android:layout_width="wrap_content"
+            android:textStyle="bold"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp"
-            android:layout_weight="1"
-            android:background="@drawable/btn"
-            android:elevation="5dp"
-            android:textColor="@color/white"
-            android:text="Huỷ"
-            android:textSize="8pt"
-            android:textStyle="bold" />
+            android:text="Lưu mật khẩu"></TextView>
     </LinearLayout>
+
+    />
+
+    <!--    <LinearLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="15dp"-->
+    <!--        android:orientation="horizontal">-->
+
+    <!--        <Button-->
+    <!--            android:id="@+id/btnDangNhap"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_margin="15dp"-->
+    <!--            android:layout_weight="1"-->
+    <!--            android:background="@drawable/btn"-->
+    <!--            android:elevation="5dp"-->
+    <!--            android:textColor="@color/white"-->
+    <!--            android:onClick="checkLogin"-->
+    <!--            android:text="Đăng nhập"-->
+    <!--            android:textSize="8pt"-->
+    <!--            android:textStyle="bold" />-->
+    <com.spark.submitbutton.SubmitButton
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Đăng nhập"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btnLogin"
+        android:textColor="@color/textXanh"
+        app:sub_btn_background="@color/white"
+        app:sub_btn_duration="5000"
+        android:textAllCaps="true"
+        android:textSize="6pt"
+        android:onClick="checkLogin"
+        app:sub_btn_tick_color="@color/white"
+        app:sub_btn_line_color="@color/text"
+        app:sub_btn_ripple_color="@color/text" />
+    <!--    </LinearLayout>-->
 
 
     <LinearLayout

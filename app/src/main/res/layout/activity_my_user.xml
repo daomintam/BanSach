@@ -27,7 +27,7 @@
             android:layout_height="140dp"
             android:layout_marginTop="180dp"
             android:background="@drawable/tron"
-            android:src="@drawable/user" />
+            android:src="@drawable/pin" />
 
         <ImageButton
             android:background="#00000000"

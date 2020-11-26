@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
+import android.widget.ToggleButton;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -26,6 +27,7 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.spark.submitbutton.SubmitButton;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -33,8 +35,9 @@ import java.util.Iterator;
 public class LogInActivity extends AppCompatActivity {
     EditText edUserName;
     TextInputEditText edPassword;
-    Button btnLogin, btnCancel, btnAdd;
-    CheckBox chkRememberPass;
+    SubmitButton btnLogin;
+    Button btnAdd;
+    ToggleButton chkRememberPass;
     String strUser, strPass;
     private FirebaseAuth mAuth;
     ArrayList<UserModel> userModelArrayList;
@@ -44,14 +47,14 @@ public class LogInActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        getSupportActionBar().hide();
         setTitle("ĐĂNG NHẬP");
 
         load = new LoadingDialog(this);
         edUserName = findViewById(R.id.edUserName);
         edPassword = findViewById(R.id.edPassword);
-        btnLogin = (Button) findViewById(R.id.btnLogin);
-        btnCancel = (Button) findViewById(R.id.btnCancel);
-        chkRememberPass = (CheckBox) findViewById(R.id.check);
+        btnLogin = findViewById(R.id.btnLogin);
+        chkRememberPass = findViewById(R.id.check);
         mAuth = FirebaseAuth.getInstance();
         autoFill();
         getAll();
@@ -59,21 +62,14 @@ public class LogInActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(LogInActivity.this, SignInActivity.class);
-                ;
                 startActivity(i);
-            }
-        });
-        findViewById(R.id.btnCancel).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                System.exit(1);
             }
         });
 
     }
 
     public void checkLogin(View v) {
-        load.startLoad(1);
+//        load.startLoad(1);
         strUser = edUserName.getText().toString();
         strPass = edPassword.getText().toString();
         if (strUser.isEmpty()) {

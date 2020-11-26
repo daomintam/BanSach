@@ -54,6 +54,7 @@ public class ListBillActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_hoa_don);
+        getSupportActionBar().hide();
         setTitle("HOÁ ĐƠN");
         lvHoaDon = findViewById(R.id.lvHoaDon);
         billFireBase = new BillFirebase(ListBillActivity.this);
