@@ -37,7 +37,7 @@ public class LogInActivity extends AppCompatActivity {
     TextInputEditText edPassword;
     SubmitButton btnLogin;
     Button btnAdd;
-    ToggleButton chkRememberPass;
+    CheckBox chkRememberPass;
     String strUser, strPass;
     private FirebaseAuth mAuth;
     ArrayList<UserModel> userModelArrayList;

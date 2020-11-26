@@ -158,34 +158,21 @@
             app:sub_btn_tick_color="@color/white"
             app:sub_btn_line_color="@color/text"
             app:sub_btn_ripple_color="@color/text" />
-        <!--        <Button-->
-        <!--            android:background="@drawable/btn"-->
-        <!--            android:elevation="5dp"-->
-        <!--            android:textColor="@color/white"-->
-        <!--            android:textStyle="bold"-->
-        <!--            android:layout_margin="15dp"-->
-        <!--            android:id="@+id/btnAddUser"-->
-        <!--            android:layout_width="wrap_content"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_weight="1"-->
-        <!--            android:onClick="addUser"-->
-        <!--            android:text="Đăng ký" />-->
 
         <Button
             android:id="@+id/btnCancelUser"
-            android:layout_width="120dp"
+            android:layout_width="150dp"
             android:layout_height="55dp"
-            android:layout_gravity="center_vertical"
+            android:layout_gravity="center"
             android:layout_margin="15dp"
             android:layout_marginTop="150dp"
             android:typeface="monospace"
+            android:drawableLeft="@drawable/ic_exit"
             android:background="@drawable/btnshape"
-            android:drawableRight="@drawable/ic_exit"
             android:drawableTintMode="src_atop"
             android:elevation="5dp"
-            android:drawableEnd="@drawable/ic_exit"
             android:text="Trở về"
             android:textColor="@color/white"
-            android:textSize="8pt" />
+            android:textSize="8pt"></Button>
     </LinearLayout>
 </LinearLayout>

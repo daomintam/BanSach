@@ -5,7 +5,7 @@
     <!--    Viền của khung-->
     <stroke
         android:width="2dp"
-        android:color="@color/textXanh" />
+        android:color="#5CC2FFFF" />
     <!--    Chỉnh độ bo tròn-->
     <corners android:radius="24dp" />
 </shape>

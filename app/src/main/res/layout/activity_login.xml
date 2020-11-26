@@ -102,16 +102,21 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <ToggleButton
-            android:id="@+id/check"
-            android:layout_width="40dp"
-            android:layout_height="22dp"
-            android:layout_marginRight="20dp"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="35dp"
-            android:background="@drawable/toggle"
-            android:checked="false" />
+        <!--        <ToggleButton-->
+        <!--            android:id="@+id/check"-->
+        <!--            android:layout_width="40dp"-->
+        <!--            android:layout_height="22dp"-->
+        <!--            android:layout_marginRight="20dp"-->
+        <!--            android:layout_centerHorizontal="true"-->
+        <!--            android:layout_centerVertical="true"-->
+        <!--            android:layout_marginLeft="35dp"-->
+        <!--            android:background="@drawable/toggle"-->
+        <!--            android:checked="false" />-->
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lưu mật khẩu"
+            android:id="@+id/check"></CheckBox>
 
         <TextView
             android:textColor="@color/textXanh"
@@ -121,27 +126,6 @@
             android:text="Lưu mật khẩu"></TextView>
     </LinearLayout>
 
-    />
-
-    <!--    <LinearLayout-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_marginTop="15dp"-->
-    <!--        android:orientation="horizontal">-->
-
-    <!--        <Button-->
-    <!--            android:id="@+id/btnDangNhap"-->
-    <!--            android:layout_width="wrap_content"-->
-    <!--            android:layout_height="wrap_content"-->
-    <!--            android:layout_margin="15dp"-->
-    <!--            android:layout_weight="1"-->
-    <!--            android:background="@drawable/btn"-->
-    <!--            android:elevation="5dp"-->
-    <!--            android:textColor="@color/white"-->
-    <!--            android:onClick="checkLogin"-->
-    <!--            android:text="Đăng nhập"-->
-    <!--            android:textSize="8pt"-->
-    <!--            android:textStyle="bold" />-->
     <com.spark.submitbutton.SubmitButton
         android:layout_width="match_parent"
         android:layout_height="100dp"
